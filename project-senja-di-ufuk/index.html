@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senja di Ufuk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.hero-section {
+  position: relative;
+  background-image: url('images/46284c5ffafe3b98e13419c5c247cd0fb1eb651b.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 888px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 180px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+  position: relative;
+  z-index: 10;
+}
+
+.brand-logo {
+  font-size: 24px;
+  color: var(--color-text-light);
+}
+
+.main-nav {
+  background-color: rgba(245, 240, 228, 0.4);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 8px;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.hero-content {
+  margin-top: 163px;
+  max-width: 786px;
+  margin-left: 40px;
+  margin-right: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.28;
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+.hero-content p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: 734px;
+  margin-bottom: 40px;
+  color: var(--color-primary);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #f5f0e4;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(26, 46, 64, 0.3);
+  transition: transform 0.3s;
+}
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding-bottom: 100px;
+  }
+  .site-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-content {
+    margin-top: 60px;
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+}
+
+/* CSS for section section:philosophy */
+.philosophy-section {
+  padding-top: 158px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.philosophy-section .container {
+  max-width: 848px;
+}
+
+.philosophy-section h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.philosophy-section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .philosophy-section {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+
+/* CSS for section section:experiences */
+.experiences-section {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 220px 0;
+  margin-top: -221px;
+  z-index: 0;
+}
+
+.experiences-section .wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-99.5%);
+  pointer-events: none;
+}
+
+.experiences-section .wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(99.5%);
+  pointer-events: none;
+}
+
+.experiences-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 104px;
+  position: relative;
+  z-index: 2;
+}
+
+.experience-card {
+  text-align: center;
+}
+
+.experience-card img {
+  border-radius: 16px;
+  width: 311px;
+  height: 350px;
+  object-fit: cover;
+  margin: 0 auto 40px;
+}
+
+.experience-card h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.experience-card p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.experience-card p a {
+  color: var(--color-accent);
+  display: inline-block;
+  margin-top: 22px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .experiences-content {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experiences-section {
+    padding: 150px 0;
+    margin-top: -150px;
+  }
+}
+
+/* CSS for section section:accommodations */
+.accommodations-section {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.deco-ellipse-1 {
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+  top: 0;
+  left: 17px;
+  width: 1407px;
+  pointer-events: none;
+}
+
+.accommodations-container {
+  display: grid;
+  grid-template-columns: minmax(300px, 466px) 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.accommodations-intro {
+  grid-column: 1 / 2;
+  margin-top: 42px;
+}
+
+.accommodations-intro h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.accommodations-intro p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.accommodation-list {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.accommodation-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border-radius: 16px;
+  padding: 4px;
+  gap: 40px;
+}
+
+.accommodation-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.accommodation-item img {
+  width: 311px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.accommodation-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.accommodation-text h3 {
+  font-size: 24px;
+}
+
+.accommodation-text p {
+  font-size: 16px;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.details-button {
+  background-color: var(--color-background);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 16px;
+  padding: 10px 16px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 16px;
+  align-self: flex-start;
+  transition: transform 0.3s;
+}
+.details-button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .accommodations-container {
+    grid-template-columns: 1fr;
+  }
+  .accommodations-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+  }
+  .accommodation-list {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .accommodation-item, .accommodation-item.reverse {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .accommodation-item img {
+    width: 100%;
+    height: 250px;
+  }
+  .accommodation-text {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .details-button {
+    align-self: center;
+  }
+}
+
+/* CSS for section section:story */
+.story-section {
+  padding: 80px 0;
+}
+
+.section-divider {
+  border: none;
+  height: 5px;
+  background-color: rgba(26, 46, 64, 0.1);
+}
+
+.story-intro {
+  text-align: center;
+  max-width: 939px;
+  margin: 80px auto;
+}
+
+.story-intro h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.story-intro p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.story-cards {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 0;
+}
+
+.story-card {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 524px;
+  text-align: center;
+}
+
+.story-card h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.story-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .story-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .story-section { padding: 40px 0; }
+  .story-intro { margin: 60px auto; }
+  .story-intro h2 { font-size: 28px; }
+}
+
+/* CSS for section section:footer */
+.site-footer {
+  padding-top: 160px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.footer-bg-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.deco-ellipse-2 {
+  position: absolute;
+  top: -106px;
+  left: -65px;
+}
+
+.deco-ellipse-3 {
+  position: absolute;
+  top: -21px;
+  left: 799px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.footer-info {
+  max-width: 576px;
+}
+
+.footer-info h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.footer-info p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer-links h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.footer-links ul {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links a {
+  font-size: 20px;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--color-primary);
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding-top: 80px;
+  }
+  .footer-links ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="header" class="hero-section">
+  <header class="site-header container">
+    <a href="#" class="brand-logo">Senja di Ufuk</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#header" class="active">Home</a></li>
+        <li><a href="#experiences">Pengalaman</a></li>
+        <li><a href="#accommodations">Akomodasi</a></li>
+        <li><a href="#story">Kisah Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero-content container">
+    <h1>Hening Bukan Lagi Sekadar Sunyi.</h1>
+    <p>Selamat datang di Senja di Ufuk, sebuah resort persembunyiaan di mana arsitektur, alam, dan pelayanan berpadu untuk menciptakan ruang bagi jiwa Anda.</p>
+    <a href="#" class="cta-button">Rencanakan Kunjungan Anda</a>
+  </div>
+  <img src="images/2_4.svg" alt="Wave shape" class="hero-wave">
+</section>
+<section id="philosophy" class="philosophy-section">
+  <div class="container">
+    <h2>Filosofi Kami</h2>
+    <p>Kami percaya kemewahan sejati bukanlah tentang kebisingan, melainkan tentang keheningan. Bukan tentang kecepatan, melainkan tentang kedalaman. Di setiap sudut yang kami rancang, di setiap hidangan yang kami sajikan, tujuan kami hanya satu: memberi Anda ruang untuk kembali menjadi diri sendiri.</p>
+  </div>
+</section>
+<section id="experiences" class="experiences-section">
+  <img src="images/12_50.svg" alt="" class="wave-top" aria-hidden="true">
+  <div class="experiences-content container">
+    <div class="experience-card">
+      <img src="images/06d37307ad92e4605965e85afee67a9f5a2196c4.png" alt="Seorang wanita sedang bermeditasi di tepi pantai.">
+      <h3>Memulihkan Jiwa</h3>
+      <p>Rangkaian pengalaman untuk Anda yang mencari ketenangan batin, dimulai dengan meditasi fajar dan sesi pijat aromaterapi. <a href="#">LIhat Detail..</a></p>
+    </div>
+    <div class="experience-card">
+      <img src="images/c56c9efbebf044b812fbf270b232734c356433b9.png" alt="Sepasang kekasih sedang piknik romantis di pantai saat matahari terbenam.">
+      <h3>Merayakan Momen</h3>
+      <p>Ciptakan kenangan abadi bersama orang terkasih, termasuk makan malam romantis di bawah bintang dan piknik privat di pantai. <a href="#">LIhat Detail..</a></p>
+    </div>
+    <div class="experience-card">
+      <img src="images/dff81eae510521a0054b2d779db46b38aa1075a0.png" alt="Air terjun yang indah di tengah hutan lebat.">
+      <h3>Menyatu dengan Lokal</h3>
+      <p>Selami kearifan dan keindahan alam sekitar. Belajar membuat kerajinan dari pengrajin desa dan trekking ke air terjun rahasia. <a href="#">LIhat Detail..</a></p>
+    </div>
+  </div>
+  <img src="images/12_55.svg" alt="" class="wave-bottom" aria-hidden="true">
+</section>
+<section id="accommodations" class="accommodations-section">
+  <img src="images/21_52.svg" class="deco-ellipse-1" alt="" aria-hidden="true">
+  <div class="container accommodations-container">
+    <div class="accommodations-intro">
+      <h2>Ruang untuk Kembali Pulang</h2>
+      <p>Di Senja di Ufuk, kami tidak merancang kamar. Kami merawat sangkar-sangkar pribadi tempat Anda bisa meletakkan semua beban dan membiarkan jiwa Anda beristirahat. Setiap sudut adalah undangan untuk melambat, setiap jendela adalah lukisan alam yang hidup.</p>
+    </div>
+    <div class="accommodation-list">
+      <div class="accommodation-item">
+        <img src="images/f7f592433c9657e80689b382a6ab55c4b1aeb205.png" alt="Vila Samudra dengan pemandangan laut saat matahari terbenam.">
+        <div class="accommodation-text">
+          <h3>Vila Samudra</h3>
+          <p>Bangun tidur dengan cakrawala biru tak bertepi sebagai pemandangan pertama. Vila Samudra kami rancang sebagai panggung utama bagi pertunjukan alam—debur ombak menjadi musik latar, dan semilir angin laut menjadi sapaan pagi. Ruang luas dengan interior minimalis dari kayu lokal hangat, memastikan tidak ada yang bisa mengalihkan perhatian Anda dari sang mahakarya di luar jendela.</p>
+          <a href="#" class="details-button">Lihat Galeri & Fasilitas</a>
+        </div>
+      </div>
+      <div class="accommodation-item reverse">
+        <img src="images/beddcc6e2be58f73b9a7c7dc1c9d2cc2c9f7b06d.png" alt="Suite Kanopi yang modern di tengah hutan rimbun.">
+        <div class="accommodation-text">
+          <h3>Suite Kanopi</h3>
+          <p>Terletak di jantung vegetasi kami yang rimbun, Suite Kanopi adalah sebuah rumah pohon yang mewah. Di sini, Anda akan merasakan sensasi hidup di tengah alam, dengan kicau burung sebagai alarm alami dan aroma tanah basah setelah hujan sebagai parfum ruangan. Material kaca yang dominan membuat Anda merasa menyatu dengan hutan, sementara interior yang nyaman memastikan privasi dan ketenangan Anda tetap terjaga.</p>
+          <a href="#" class="details-button">Jelajahi Suite Ini</a>
+        </div>
+      </div>
+      <div class="accommodation-item">
+        <img src="images/2b34db537f1f56e9d437e2e4b7c8dec923de61d8.png" alt="Paviliun Taman dengan atap kuning cerah di taman bunga.">
+        <div class="accommodation-text">
+          <h3>Paviliun Taman</h3>
+          <p>Tersembunyi di dalam taman rempah dan bunga kami yang paling rimbun, Paviliun Taman adalah sebuah ode untuk kehidupan yang sederhana dan membumi. Bangunan ini kami rancang dengan konsep semi-terbuka, di mana dinding bisa digeser untuk menyatukan ruang interior dengan taman pribadi di luarnya. Aroma sereh di pagi hari dan suara gemericik air dari kolam kecil menjadi bagian tak terpisahkan dari pengalaman Anda di sini.</p>
+          <a href="#" class="details-button">Temukan Ketenangan di Sini</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="story" class="story-section">
+  <div class="container">
+    <hr class="section-divider">
+    <div class="story-intro">
+      <h2>Kami Percaya, Hening Adalah Awal Segalanya.</h2>
+      <p>Di dunia yang tak pernah berhenti berlari, kami merindukan sebuah jeda. Sebuah tempat di mana notifikasi digantikan oleh nyanyian alam, dan tenggat waktu dilebur oleh terbit dan terbenamnya matahari. Senja di Ufuk lahir dari kerinduan itu—sebuah mimpi sederhana untuk membangun ruang di mana manusia bisa kembali terhubung dengan ritme alam dan, yang terpenting, dengan diri mereka sendiri.</p>
+    </div>
+    <div class="story-cards">
+      <div class="story-card">
+        <h3>Sebuah Janji pada Alam</h3>
+        <p>Arsitektur kami lahir dari dialog dengan alam. Setiap bangunan dirancang untuk menghormati kontur tanah dan pepohonan, menggunakan material lokal yang diolah oleh tangan-tangan pengrajin setempat. Setiap detail adalah cerminan keaslian.</p>
+      </div>
+      <div class="story-card">
+        <h3>Seni Melayani dengan Hati</h3>
+        <p>Kemewahan kami bukanlah tentang fasilitas, melainkan pelayanan yang tulus. Tim kami adalah penjaga ketenangan Anda—intuitif, personal, dan tahu kapan sunyi lebih berharga daripada kata-kata.</p>
+      </div>
+    </div>
+    <hr class="section-divider">
+  </div>
+</section>
+<footer id="footer" class="site-footer">
+  <div class="footer-bg-elements">
+    <img src="images/24_122.svg" alt="" class="deco-ellipse-2" aria-hidden="true">
+    <img src="images/24_123.svg" alt="" class="deco-ellipse-3" aria-hidden="true">
+  </div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-info">
+        <h3>Senja di Ufuk</h3>
+        <p>Biarkan kami merancang pengalaman istirahat yang tak akan terlupakan untuk Anda. Diskusikan rencana kunjungan Anda langsung dengan tim kami.</p>
+      </div>
+      <nav class="footer-links">
+        <h4>Jelajahi</h4>
+        <ul>
+          <li><a href="#accommodations">Akomodasi</a></li>
+          <li><a href="#experiences">Pengalaman</a></li>
+          <li><a href="#story">Kisah Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <p class="copyright">@2025. Copyrights by Senja di Ufuk All Rights Reserves</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><img src="images/24_106.svg" alt="Instagram"></a>
+        <a href="#" aria-label="Threads"><img src="images/24_108.svg" alt="Threads"></a>
+        <a href="#" aria-label="Facebook"><img src="images/24_110.svg" alt="Facebook"></a>
+        <a href="#" aria-label="Whatsapp"><img src="images/24_112.svg" alt="Whatsapp"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
